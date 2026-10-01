@@ -39,7 +39,12 @@ Once your database is set up, set the config values for environment variables pr
 ### 2. S3
 Create an AWS S3 bucket. The S3 bucket is used to store images that are displayed in Udagram.
 
-Set the config values for environment variables prefixed with `AWS_` in `set_env.sh`.
+Set the config values for environment variables prefixed with `AWS_` in `set_env.sh`, then create the bucket (with public-access and CORS settings matching the course instructions) by running:
+```bash
+source set_env.sh
+./scripts/create-s3-bucket.sh
+```
+This requires the AWS CLI to be configured with credentials that can create/administer S3 buckets (`aws configure --profile "$AWS_PROFILE"`). Alternatively, follow the manual console steps in `Classroom_Project_Instructions/Part_0_Prerequisites_and_Getting_Started.md`.
 
 ### 3. Backend APIs
 Launch the backend APIs locally. Each API is the application's interface to S3 and the database for its own domain.
