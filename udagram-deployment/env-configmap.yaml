@@ -7,7 +7,7 @@ metadata:
 data:
   POSTGRES_HOST: "postgres.example.rds.amazonaws.com"
   POSTGRES_DB: "postgres"
-  AWS_BUCKET: "yourbucketname"
+  AWS_BUCKET: "udagram-image-filtering-microservice"
   AWS_REGION: "us-east-1"
   AWS_PROFILE: "default"
   URL: "http://localhost:8100"
