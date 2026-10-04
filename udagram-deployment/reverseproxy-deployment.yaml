@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: reverseproxy
-          image: yourdockerhubusername/reverseproxy:v1
+          image: yourrealusername/reverseproxy:v1
           ports:
             - containerPort: 8080
           resources:
