@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: your-actual-dockerhub-username/udagram-frontend:v1
+          image: alisaber21/udagram-frontend:v1
           ports:
             - containerPort: 80
           resources:

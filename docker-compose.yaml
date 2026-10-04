@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   backend-user:
-    image: your-actual-dockerhub-username/udagram-api-user:v1
+    image: alisaber21/udagram-api-user:v1
     environment:
       POSTGRES_USERNAME: $POSTGRES_USERNAME
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD
@@ -16,7 +16,7 @@ services:
       - "8081:8080"
 
   backend-feed:
-    image: your-actual-dockerhub-username/udagram-api-feed:v1
+    image: alisaber21/udagram-api-feed:v1
     environment:
       POSTGRES_USERNAME: $POSTGRES_USERNAME
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD
@@ -33,7 +33,7 @@ services:
       - ~/.aws:/root/.aws:ro
 
   reverseproxy:
-    image: your-actual-dockerhub-username/reverseproxy:v1
+    image: alisaber21/reverseproxy:v1
     ports:
       - "8080:8080"
     depends_on:
@@ -41,7 +41,7 @@ services:
       - backend-feed
 
   frontend:
-    image: your-actual-dockerhub-username/udagram-frontend:v1
+    image: alisaber21/udagram-frontend:v1
     ports:
       - "8100:80"
     depends_on:

@@ -92,7 +92,7 @@ Launch the frontend app locally.
     ```
 3. Visit `http://localhost:8100` in your browser to verify the application is running end-to-end.
 
-> Replace the `your-actual-dockerhub-username` placeholder in `docker-compose-build.yaml`, `docker-compose.yaml`, `.travis.yml`, and `udagram-deployment/*.yaml` with your real Docker Hub account before pushing/deploying images.
+> Replace the `alisaber21` placeholder in `docker-compose-build.yaml`, `docker-compose.yaml`, `.travis.yml`, and `udagram-deployment/*.yaml` with your real Docker Hub account before pushing/deploying images.
 
 ## Tips
 1. The `.dockerignore` file is included for your convenience to not copy `node_modules`. Copying this over into a Docker container might cause issues if your local environment is a different operating system than the Docker image (ex. Windows or MacOS vs. Linux).
